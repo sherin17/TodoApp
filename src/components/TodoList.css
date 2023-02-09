@@ -1,0 +1,54 @@
+.container{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 300px;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #cde5ebd7;
+    
+}
+h1{
+    text-align: center;
+    color: rgb(134, 132, 132);
+    font-weight: 600px;
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+.form-group Button{
+    margin-left: 15px;
+    padding: 15px;
+}
+.list{
+    margin-top: 30px !important;
+}
+li{
+    margin-bottom: 12px;
+    margin-right: 45px;
+    margin-left: -12px;
+    background-color: rgb(91, 135, 143);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(231, 225, 225);
+    font-size: 22px;
+}
+.listitems{
+    display: flex;
+}
+.listitems .list-item-list{
+    flex: 1;
+}
+.listitems .icons{
+    padding-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#edit{
+    color: blue;
+}
+#delete{
+    color: red;
+}
