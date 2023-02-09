@@ -1,7 +1,7 @@
 import { Button, Container, TextField } from '@mui/material'
 import React, { useState } from 'react'
 import './TodoList.css'
-
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
 const TodoList = () => {
 
@@ -13,11 +13,16 @@ const TodoList = () => {
     //ADD
         const addtodo = () => {
             if(todo !==''){
-                settodos([...todos,  todo ])
+                settodos([...todos,  {list : todo , id : Date.now()}])
                 settodo('')
             }
             
         }
+    
+//DELETE
+    const onDelete = (id) => {
+    settodos(todos.filter((to) => to.id !== id))
+  }
     
     return (
         <div className='container'>
@@ -31,9 +36,12 @@ const TodoList = () => {
                     <ol>
                         {
                             todos.map((to) => (
-                                <li >
-                                   {to}
-                                </li>
+                                <li className='listitems'>
+                                <div className='list-item-list'>{to.list}</div>
+                                <span>
+                                    <DeleteOutlineIcon className='icons' id='delete' title="Delete" onClick={()=>onDelete(to.id)}/>
+                                </span>
+                            </li>
                             ))
                         }
                     </ol>
