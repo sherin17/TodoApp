@@ -10,7 +10,7 @@
 }
 h1{
     text-align: center;
-    color: rgb(134, 132, 132);
+    color: rgb(212, 210, 210);
     font-weight: 600px;
 }
 .form-group{
@@ -22,14 +22,33 @@ h1{
     margin-left: 15px;
     padding: 15px;
 }
-
+.list{
+    margin-top: 30px !important;
+}
 li{
     margin-bottom: 12px;
-    margin-right: 25px;
+    margin-right: 45px;
     margin-left: -12px;
     background-color: rgb(91, 135, 143);
-    padding: 8px;
+    padding: 10px;
     border-radius: 10px;
     color: rgb(231, 225, 225);
     font-size: 22px;
+}
+.listitems{
+    display: flex;
+}
+.listitems .list-item-list{
+    flex: 1;
+}
+.listitems .icons{
+    padding-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#edit{
+    color: blue;
+}
+#delete{
+    color: red;
 }
